@@ -1,24 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Drawer from "./components/drawer";
+import MettingList from "./components/metting-list";
+import Space from "./components/space";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="langogo-page">
+      <div className="langogo-page-left"></div>
+      <div className="langogo-page-right">
+        <Drawer
+          content={
+            <>
+              <Space />
+              <Space />
+            </>
+          }
         >
-          Learn React
-        </a>
-      </header>
+          <MettingList />
+        </Drawer>
+      </div>
     </div>
   );
 }

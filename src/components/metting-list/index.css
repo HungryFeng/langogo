@@ -1,0 +1,15 @@
+.langogo-metting-list {
+  padding: 16px 0;
+}
+
+.langogo-metting-list-title {
+  font-family: SF Pro Display;
+  font-size: 22px;
+  color: #1b1e28;
+}
+
+.langogo-metting-list-content {
+  margin-top: -7px;
+  position: relative;
+  z-index: 2;
+}
