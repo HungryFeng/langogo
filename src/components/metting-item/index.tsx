@@ -30,7 +30,9 @@ const MettingItem: React.FC<{ item: IMettingItem }> = ({
       <div className="langogo-metting-item-footer">
         <div className="langogo-metting-item-members">
           {members.map((member) => (
-            <div className="langogo-metting-item-member-item">{member}</div>
+            <div className="langogo-metting-item-member-item" key={member}>
+              {member}
+            </div>
           ))}
         </div>
         {hasFinished && <img src={earth} alt="" />}
